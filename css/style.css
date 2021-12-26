@@ -1,0 +1,143 @@
+/** common **/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+input {
+    outline: none;
+}
+img {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.82;
+}
+li {
+    list-style: none;
+}
+.hidden {
+    display: none;
+}
+
+/** clock **/
+#clock {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 6rem;
+    color: #ffffff;
+    margin-top: 13%;
+    margin-bottom: 1.3rem;
+}
+
+/** greeting **/
+#greeting {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 3rem;
+    color: #ffffff;
+}
+
+/** login form **/
+#login-form input {
+    width: 30%;
+    border: 0 solid black;
+    border-bottom: 3px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 40px;
+    margin-left: 35%;
+    padding: 0.7rem;
+}
+#login-form input::placeholder {
+    color: #ffffff;
+}
+
+/** todo-form **/
+#todo-box {
+    width: 370px;
+    position: absolute;
+    top: 15%;
+    left: 3%;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    padding: 1.1rem;
+    box-shadow: 7px 7px 7px rgba(135, 135, 135, 70%);
+}
+#todo-box h3 {
+    margin-bottom: 1.2rem;
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+#todo-form {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+#todo-form input {
+    width: 100%;
+    border: 0 solid black;
+    border-bottom: 3px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 1.2rem;
+    padding: 0.4rem;
+    margin-bottom: 0.5rem;
+}
+#todo-form input::placeholder {
+    color: #ffffff;
+}
+#todo-list {
+    width: 100%;
+}
+#todo-list li {
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+#todo-list li.complete {
+    text-decoration: line-through;
+}
+#todo-list li.checked {
+    color: #878787;
+}
+#todo-list li span {
+    margin-right: 0.5rem;
+}
+#todo-list li button {
+    background-color: transparent;
+    border: none;
+    margin-right: 0.3rem;
+}
+#todo-list li button:hover {
+    cursor: pointer;
+}
+
+/** quote **/
+#quote {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 13%;
+    font-size: 1.2rem;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+/** weather **/
+#weather {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 3%;
+    top: 5%;
+    color: #ffffff;
+    font-weight: bold;
+}
